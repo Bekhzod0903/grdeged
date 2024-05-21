@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foods</title>
+</head>
+<body>
+<h1>Foods page</h1>
+{% for item in food %}
+    <img src="{{ item.image.url }}" alt="{{ item.name }}"><br>
+    <a href="#">{{ item.name }}</a>
+{% endfor %}
+</body>
+</html>
